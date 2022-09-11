@@ -42,7 +42,7 @@ const fortune = (ctx, body = null, status = 200) => {
 };
 
 const app = new Koa();
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(
   koaBody({
     json: true,
@@ -131,4 +131,5 @@ app.use(router.allowedMethods());
 
 const port = process.env.PORT || 7070;
 const server = http.createServer(app.callback());
+
 server.listen(port);
