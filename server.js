@@ -23,9 +23,7 @@ const randomNumber = (start, stop) => {
 };
 
 const fortune = (ctx, body = null, status = 200) => {
-  // Uncomment for delay
   const delay = randomNumber(1, 3) * 1000;
-  // const delay = 0;
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       // Uncomment for error generation
@@ -42,7 +40,7 @@ const fortune = (ctx, body = null, status = 200) => {
 };
 
 const app = new Koa();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://sapogoha.github.io/' }));
 app.use(
   koaBody({
     json: true,
