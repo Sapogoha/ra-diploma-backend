@@ -7,3 +7,6 @@
 [Heroku](https://sapogoha-ra-diploma-back.herokuapp.com)
 
 Для демонстрации возможностей приложения заложена эмуляция задержки ответа и генерация ошибок.
+
+
+Frontend в [репозитории](https://github.com/Sapogoha/ra-diploma-frontend)
