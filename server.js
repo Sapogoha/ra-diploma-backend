@@ -40,7 +40,7 @@ const fortune = (ctx, body = null, status = 200) => {
 };
 
 const app = new Koa();
-app.use(cors({ origin: 'https://sapogoha.github.io/' }));
+app.use(cors({ origin: 'https://sapogoha.github.io' }));
 app.use(
   koaBody({
     json: true,
